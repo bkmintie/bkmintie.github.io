@@ -4,8 +4,16 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--text-color: #656565;
+	--link-color: #ff3300;
+	--focus-color: #0b57d0;
+}
+
 body {
 	padding: 32px 20px;
+	color: var(--text-color);
+	background: #fff;
 }
 
 .container {
@@ -25,7 +33,7 @@ h1 {
 p {
 	font-size: clamp(1rem, 2.2vw, 1.05rem);
 	font-family: "Courier New", Courier, monospace;
-	color: #797979;
+	color: var(--text-color);
 	line-height: 1.7;
 	max-width: 62ch;
 	width: 100%;
@@ -38,7 +46,7 @@ ul {
 	padding: 0;
 	font-size: clamp(1rem, 2.2vw, 1.05rem);
 	font-family: "Courier New", Courier, monospace;
-	color: #797979;
+	color: var(--text-color);
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
@@ -50,8 +58,24 @@ li {
 	display: inline-block;
 }
 
-a:link {
-	color: #ff3300;
+a {
+	color: var(--link-color);
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 2px;
+}
+
+a:visited {
+	color: var(--link-color);
+}
+
+a:hover {
+	color: #d82b00;
+}
+
+a:focus-visible {
+	outline: 3px solid var(--focus-color);
+	outline-offset: 2px;
+	border-radius: 2px;
 }
 
 @media (max-width: 600px) {
