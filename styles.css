@@ -26,10 +26,11 @@ p {
 	font-size: clamp(1rem, 2.2vw, 1.05rem);
 	font-family: "Courier New", Courier, monospace;
 	color: #797979;
-	line-height: 1.6;
-	max-width: 650px;
+	line-height: 1.7;
+	max-width: 62ch;
 	width: 100%;
 	margin-bottom: 24px;
+	text-wrap: pretty;
 }
 
 ul {
@@ -42,6 +43,7 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px 16px;
+	line-height: 1.5;
 }
 
 li {
@@ -62,11 +64,15 @@ a:link {
 	}
 
 	p {
-		margin-bottom: 20px;
-		line-height: 1.55;
+		font-size: 1.05rem;
+		margin-bottom: 18px;
+		line-height: 1.75;
+		hyphens: auto;
 	}
 
 	ul {
 		margin-top: 8px;
+		font-size: 1.02rem;
+		gap: 8px 14px;
 	}
 }
