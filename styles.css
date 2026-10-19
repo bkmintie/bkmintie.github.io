@@ -5,16 +5,28 @@
 }
 
 :root {
+	color-scheme: light dark;
+	--bg-color: #fff;
 	--text-color: #656565;
 	--link-color: #d82b00;
 	--link-hover-color: #b02300;
 	--focus-color: #0b57d0;
 }
 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: #121212;
+		--text-color: #b3b3b3;
+		--link-color: #ff5c33;
+		--link-hover-color: #ff8566;
+		--focus-color: #8ab4f8;
+	}
+}
+
 body {
 	padding: 32px 20px;
 	color: var(--text-color);
-	background: #fff;
+	background: var(--bg-color);
 }
 
 .container {
