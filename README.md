@@ -8,7 +8,7 @@ Single-page personal portfolio site for Bryce Mintie.
 - Google Analytics 4 (`G-YG7LVQFBS3`)
 
 ## Local Preview
-Open `/Users/brycemintie/Documents/GitHub/bkmintie.github.io/index.html` in a browser.
+Open `index.html` in a browser.
 
 ## Deploy
 Hosted with GitHub Pages from this repository.
