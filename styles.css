@@ -6,7 +6,8 @@
 
 :root {
 	--text-color: #656565;
-	--link-color: #ff3300;
+	--link-color: #d82b00;
+	--link-hover-color: #b02300;
 	--focus-color: #0b57d0;
 }
 
@@ -24,9 +25,9 @@ body {
 
 h1 {
 	font-size: clamp(2.75rem, 10vw, 5.25rem);
-	font-family: 'Share', cursive;
+	font-family: 'Share', system-ui, sans-serif;
 	line-height: 0.9;
-	letter-spacing: clamp(-1px, -0.5vw, -5px);
+	letter-spacing: clamp(-5px, -0.5vw, -1px);
 	margin-bottom: 24px;
 }
 
@@ -54,22 +55,14 @@ ul {
 	line-height: 1.5;
 }
 
-li {
-	display: inline-block;
-}
-
 a {
 	color: var(--link-color);
 	text-decoration-thickness: 1.5px;
 	text-underline-offset: 2px;
 }
 
-a:visited {
-	color: var(--link-color);
-}
-
 a:hover {
-	color: #d82b00;
+	color: var(--link-hover-color);
 }
 
 a:focus-visible {
