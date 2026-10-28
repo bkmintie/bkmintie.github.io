@@ -96,7 +96,6 @@ a:focus-visible {
 	p {
 		margin-bottom: 18px;
 		line-height: 1.75;
-		hyphens: auto;
 	}
 
 	ul {
